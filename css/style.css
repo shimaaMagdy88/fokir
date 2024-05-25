@@ -1,0 +1,251 @@
+/* GENERAL STYLE */
+.container-fluid{
+    width: 79% !important;
+}
+.special-color{
+    color:#ff305b;
+}
+.special-btn{
+    background-color: #ff305b;
+    color:white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border:hidden;
+    outline: none;
+}
+.special-btn:hover{
+    background-color: rgb(224, 8, 8);
+    transition: background 0.5s;
+}
+.heading{
+    font-weight: 700;
+    font-size: 38px;
+    position: relative;
+}
+.lines{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.bg-gray{
+    background-color: rgb(241, 241, 241) !important;
+}
+.first-line, .second-line, .third-line{
+    width: 90px;
+    height: 1px;
+    background-color: #ff305b;
+    position: absolute;
+    bottom:0px;
+}
+.second-line{
+    bottom: 5px;
+    width: 170px;
+}
+.third-line{
+    bottom: 10px;
+}
+
+/* HEADER */
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/slider-02.jpg);
+    background-position: center;
+    background-size: cover;
+}
+header nav a{
+    color:white;
+}
+header nav ul li{
+    padding-left: 10px;
+}
+header nav .navbar-brand{
+    font-size: 25px;
+    font-weight: 600;
+}
+header nav a:hover{
+    color:#ff305b;
+    transition: color 0.6s;
+}
+header .home-text{
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header .home-text h1{
+    font-size: 65px;
+}
+header .home-text p{
+    font-size: 25px;
+    font-weight: 100;
+}
+
+/* ABOUT SECTION */
+main #about .about-img{
+    position: relative;
+}
+main #about .box{
+    width: 350px;
+    height: 350px;
+    border: 8px solid #555;
+    border-radius: 5px;
+    position: absolute;
+    top:4%;
+    right:15%;
+}
+main #about img{
+    width:350px;
+    border-radius: 5px;
+    position: absolute;
+    top:10%;
+    right:10%;
+}
+main #about{
+    color:#666;
+}
+main #about h2{
+    font-weight: 600;
+    color:#444;
+}
+main #about .lists ul li span{
+    font-weight: 600;
+    color:black;
+}
+main #about p{
+    border-bottom: 1px dashed #999;
+    font-weight: 400;
+}
+main #about .btns a{
+    color:white;
+    text-decoration: none;
+}
+
+/* SERVICES SECION */
+main #services h4{
+    font-weight: 700;
+    font-size: 20px;
+}
+main #services p{
+    color:#666;
+}
+main #services i{
+    font-size: 28px;
+}
+main #services .col-3:hover{
+    background-color: white;
+    transition: background 0.5s;
+}
+
+/* PORTFOLIO SECTION */
+main #portfolio ul li a{
+    font-size: 16px;
+    text-transform: uppercase;
+}
+main #portfolio .portfolio-text i{
+    font-size: 25px;
+}
+
+/* TESTIMONIAL SECTION */
+main #test .box{
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+main #test .box .test-text .location,
+main #test .box .test-text a,
+main #test .box .test-text p{
+    color:#666;
+}
+main #test .box .test-text{
+    z-index: 3;
+}
+main #test .box .test-text .location{
+    font-size: 14px;
+}
+main #test .box .test-text p{
+    font-weight: 400;
+}
+main #test .box .test-text .stars i{
+    color:rgb(241, 195, 13);
+    font-size: 13px;
+}
+/* main #test .box::after{
+    content: "";
+    height: 200px;
+    width: 200px;
+    background-color: #ff305b;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    border-bottom-right-radius:200px;
+    z-index: 2;
+} */
+main #test .box .triangle{
+    width: 0;
+    height: 0;
+    border-top: 200px solid #ff305b;
+    border-right: 150px solid transparent;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: -22;
+}
+main #test .box .test-img{
+    z-index: 5;
+}
+main #test .icons{
+    cursor: pointer;
+}
+main #test .icons span{
+    height: 10px;
+    width: 26px;
+    border: 1px solid #ff305b;
+    border-radius: 10px;
+    background-color: #ff305b;
+    display: inline;
+}
+main #test .icons i{
+    font-size: 10px;
+}
+
+/* BLOG SECTION */
+main #blog .blog-text span,
+main #blog .blog-text p{
+    color:#555;
+}
+main #blog .blog-text a{
+    text-decoration: none;
+    color:#444;
+    font-size: 18px;
+}
+main #blog .blog-text a i{
+    font-size: 15px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #333;
+}
+footer .icons i{
+    color:white;
+}
+footer .icons i:hover{
+    color:#ff305b;
+    transition: color 0.5s;
+}
+
+/* @ MEDIA QUERY */
+@media (max-width:730px){
+    main #about .about-img{
+        display: none;
+    }
+    header .home-text h1{
+        font-size: 30px;
+    }
+    header .home-text p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
